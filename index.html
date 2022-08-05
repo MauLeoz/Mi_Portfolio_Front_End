@@ -14,7 +14,44 @@
 <script src="script.js"></script>
 
 </head>
+
 <body>
+   <header class="container-fluid bg-primary d-flex justify-content-center">
+     <p class="text-light mb-0 p-2 fs-3">Mi Portfolio</p>
+   </header>
+
+   <!--Menu-->
+   <nav class="navbar navbar-expand-lg bg-ligth p-3"id="menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <span class="text-primary fs-3 fw-bold p-3">Secciones</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Acerca de mí</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mis estudios</a>
+            </li>
+            <li class="nav-item">
+
+               <a class="nav-link" href="#">Mi Experiencia</a>
+             </li>           
+          </ul>          
+        </div>
+      </div>
+    </nav>
+
+  
+
+
+
    <div class="marco" style="position: relative; left: 0; top: 0;">
        <img src="img\Fondo1.jpg" alt="Fondo Portfolio" class='fondo'/>
        <img src="img\Foto Perfil.jpg" alt="Fondo perfil"class='perfil'/>
@@ -42,7 +79,7 @@
     <p>Cursando primer año en la Universidad Tecnólogica Nacional (Mar del Plata).
        (Marzo 2022-En curso)
     </p>  
-    </div>git 
+    </div> 
     <div>
      <h2>Otros Cursos</h2> 
      <p style="font-size: 18px; font-weight: bold">Laboratorio de Inglés</p> 
@@ -58,26 +95,62 @@
     <div>
         <h2>Experiencia Laboral</h2>
         <p style="font-size: 18px; font-weight: bold">G4 Soluciones IT - Consultor ERP (Marzo 2022-Actualidad)</p>
-        <P>
-        Consultor Softland<br>
-        Consultas/Modificacion en bases de datos (SQL Server)<br>
-        Nexo entre el cliente y el desarrollador<br>        
-        </P>
+        <ul>
+        <li>Consultor Softland</li>
+         <li>Consultas/Modificacion en bases de datos (SQL Server)</li>
+         <li>Nexo entre el cliente y el desarrollador</li>        
+        </ul>
         <p style="font-size: 18px; font-weight: bold">Casino de Victoria SA - Analista Contable (Mayo 2019-Marzo 2022)</p>
-        <P>
-        Responsable de todas las compras de bienes y servicios de las unidades de negocio.<br>
-        Manejo de caja.<br>
-        Emisión de informes e indicadores de gestión. Reporte directo a la Gerencia de Administración y Finanzas.<br>
-        Planificación y mejora del circuito de compras.<br>
-        Preparación de los estados contables.<br>
-        </P>
+        <ul>
+         <li>Responsable de todas las compras de bienes y servicios de las unidades de negocio.</li> 
+         <li>Manejo de caja.</li> 
+         <li>Emisión de informes e indicadores de gestión. Reporte directo a la Gerencia de Administración y Finanzas.</li> 
+         <li>Planificación y mejora del circuito de compras.</li> 
+         <li>Preparación de los estados contables.</li> 
+        </ul>
         <p style="font-size: 18px; font-weight: bold">Iturria SA - Pago a Proveedores (Octubre 2016-Mayo 2019)</p>
-        <P>
-        Pago a Proveedores<br>
-        Conciliaciones de Cuentas<br>
-        Tesorería<br>
-        Gestión administrativa<br>
-        </P>
+        <ul>
+        <li> Pago a Proveedores</li> 
+        <li> Conciliaciones de Cuentas</li> 
+        <li> Tesorería</li> 
+        <li> Gestión administrativa</li> 
+        </ul>
     </div>
+
+    <div>
+
+    </div>
+
+      <!--Slider Imagenes-->
+           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="item">         
+         <div class="carousel-inner" align="center">
+           <div class="carousel-item active" data-bs-interval="3200">
+             <img src="img\angular.png" class="d-block w-15" alt="...">
+           </div>
+           <div class="carousel-item" data-bs-interval="3200">
+             <img src="img\css.png" class="d-block w-15" alt="...">
+           </div>
+           <div class="carousel-item" data-bs-interval="3200">
+             <img src="img\html.png"class="d-block w-15" alt="...">
+           </div>
+           <div class="carousel-item" data-bs-interval="3200">
+             <img src="img\javascript.png"class="d-block w-15" alt="...">
+           </div>
+           <div class="carousel-item" data-bs-interval="3200">
+             <img src="img\bootstrap.png"class="d-block w-auto" alt="...">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+       </div>
+    
 </body>
 </html>
